@@ -3,7 +3,7 @@
       {
         "title": "E-commerce Platform",
         "category": "web-development",
-        "image": "/images/profile.jpg",
+        "image": "/my_portfolio/images/profile.jpg",
         "description": "A full-stack e-commerce platform featuring real-time inventory management, secure payment processing, and an intuitive admin dashboard. Implemented features like cart management, order tracking, and product recommendations.",
         "keyFeatures": [
           "Implemented real-time inventory tracking using WebSocket",
@@ -18,7 +18,7 @@
       {
         "title": "Task Management System",
         "category": "web-application",
-        "image": "/images/profile_1.png",
+        "image": "/my_portfolio/images/profile_1.png",
         "description": "A collaborative task management platform with real-time updates, file sharing, and team communication features. The system includes project timeline visualization, resource allocation, and automated reporting.",
         "keyFeatures": [
           "Built real-time collaboration using Socket.io",
@@ -33,7 +33,7 @@
       {
         "title": "AI-Powered Analytics Dashboard",
         "category": "machine-learning",
-        "image": "/images/profile_1.png",
+        "image": "/my_portfolio/images/profile_1.png",
         "description": "A sophisticated analytics platform that leverages machine learning for data visualization and predictive analytics. Features include customizable dashboards, automated report generation, and trend analysis.",
         "keyFeatures": [
           "Integrated machine learning models for prediction",
@@ -48,7 +48,7 @@
       {
         "title": "Natural Language Processing API",
         "category": "nlp",
-        "image": "/images/profile_1.png",
+        "image": "/my_portfolio/images/profile_1.png",
         "description": "A robust API for natural language processing tasks including sentiment analysis, entity recognition, text classification, and language detection. The API is designed for high throughput and accuracy.",
         "keyFeatures": [
           "Achieved 92% accuracy on sentiment analysis benchmark",
@@ -63,7 +63,7 @@
       {
         "title": "Computer Vision Object Detection",
         "category": "computer-vision",
-        "image": "/images/profile_1.png",
+        "image": "/my_portfolio/images/profile_1.png",
         "description": "A computer vision system for real-time object detection and tracking in video streams. Optimized for edge devices with limited computing resources.",
         "keyFeatures": [
           "Implemented YOLOv5 with custom training",
