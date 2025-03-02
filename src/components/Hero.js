@@ -106,11 +106,11 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10 flex flex-col lg:flex-row items-center justify-between">
         {/* Left text section */}
         <div className="lg:w-1/2 text-white z-10 pt-20 lg:pt-0">
-          <h1 className="text-6xl md:text-7xl font-extrabold mb-4">{personalInfo.greeting}</h1>
-          <h2 className="text-5xl md:text-6xl font-bold mb-8 relative pb-6">
+          <h2 className="text-6xl md:text-7xl font-extrabold mb-4">{personalInfo.greeting}</h2>
+          <h3 className="text-5xl md:text-6xl font-bold mb-8 relative pb-6">
             {personalInfo.staticHeadline} <span className="text-[#56cca7]">{displayRole}</span>
             <span className="absolute bottom-0 left-0 w-32 h-1 bg-[#56cca7]"></span>
-          </h2>
+          </h3>
           <p className="text-lg text-gray-300 mb-10 max-w-xl">
             {personalInfo.description}
           </p>

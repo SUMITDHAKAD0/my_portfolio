@@ -3,7 +3,7 @@
       {
         "title": "E-commerce Platform",
         "category": "web-development",
-        "image": "/my_portfolio/images/profile.jpg",
+        "image": "/my_portfolio/images/profile_2.jpg",
         "description": "A full-stack e-commerce platform featuring real-time inventory management, secure payment processing, and an intuitive admin dashboard. Implemented features like cart management, order tracking, and product recommendations.",
         "keyFeatures": [
           "Implemented real-time inventory tracking using WebSocket",

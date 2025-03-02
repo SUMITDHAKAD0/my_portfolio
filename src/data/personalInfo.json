@@ -1,22 +1,21 @@
 {
-    "name": "John Smith",
+    "name": "Sumit Dhakad",
     "title": "ML Engineer",
     "greeting": "Hello!",
     "staticHeadline": "I Am",
     "roles": [
-      "ML Engineer",
-      "Data Scientist",
-      "AI Researcher",
-      "Deep Learning Expert",
+      "Sumit Dhakad",
+      "Machine Learning Engineer",
+      "Genrative AI Specialist",
       "NLP Specialist",
-      "Computer Vision Engineer"
+      "Computer Vision Specialist"
     ],
-    "description": "I'm a Machine Learning Engineer with extensive experience for over 5 years. My expertise is to develop intelligent systems, implement deep learning models, and solve complex data problems with state-of-the-art AI technologies.",
+    "description": "Experienced AI professional with 2+ years of hands-on AI/ML expertise. Proficient in NLP, Generative AI, Computer Vision. Skilled in building and maintaining efficient AI pipelines. Seeking challenging projects to contribute to innovative teams and drive impactful results.",
     "location": "India",
     "email": "sumit.dhakad9644@gmail.com",
     "phone": "+91-9644726442",
-    "profileImage": "/my_portfolio/images/profile_1.png",
-    "resumeLink": "/my_portfolio/images/resume.pdf",
+    "profileImage": "/my_portfolio/images/profile.jpg",
+    "resumeLink": "/my_portfolio/images/Sumit_Resume.pdf",
     "socialMedia": [
       {
         "name": "LinkedIn",

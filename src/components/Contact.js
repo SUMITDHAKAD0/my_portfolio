@@ -97,8 +97,8 @@ const Contact = () => {
           <div>
             <h3 className="text-2xl font-semibold mb-4">Get In Touch</h3>
             <p className="text-light-gray mb-6">
-              Have a project in mind or want to discuss ML solutions for your organization? 
-              I'm always open to new opportunities and collaborations.
+              Looking to leverage AI/ML for your business or need expert guidance on AI solutions?<br />
+              Let’s connect to explore innovative opportunities and drive impactful results together.
             </p>
             
             <div className="space-y-4">

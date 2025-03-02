@@ -38,6 +38,16 @@ const Experience = () => {
                 </div>
                 
                 <p className="text-light-gray mb-5">{exp.description}</p>
+
+                {/* Key Features Section */}
+                <div className="mb-6">
+                  <h4 className="text-base font-semibold mb-3 text-secondary">Key Features:</h4>
+                  <ul className="list-disc list-inside space-y-1 text-sm text-light-gray">
+                    {exp.keyFeatures && exp.keyFeatures.map((feature, idx) => (
+                      <li key={idx}>{feature}</li>
+                    ))}
+                  </ul>
+                </div>
                 
                 <div className="flex flex-wrap gap-2">
                   {exp.technologies.map((tech, idx) => (

@@ -1,25 +1,52 @@
 {
     "experiences": [
       {
-        "title": "Senior ML Engineer",
-        "company": "TechInnovate AI",
-        "period": "2023 - Present",
-        "description": "Lead the development of deep learning models for computer vision applications. Managed a team of 4 ML engineers. Improved model accuracy by 30% and reduced inference time by 40%. Implemented MLOps practices and CI/CD pipelines for model deployment.",
-        "technologies": ["TensorFlow", "PyTorch", "Docker", "Kubernetes", "MLflow"]
+        "title": "Machine Learning Engineer II",
+        "company": "Verge Impex LLP",
+        "period": "Nov-2024 to Present",
+        "description": "Led the development of a secure, offline, on-prem AI-based health monitoring system for the medical department, integrating an intelligent agent workflow for high-accuracy insights. Spearheaded the design of a scalable FastAPI solution with automated testing and CI/CD for seamless deployment.",
+        "keyFeatures": [
+          "98% accuracy achieved in AI-driven health monitoring insights.",
+          "100% offline functionality enabled for secure, on-prem medical operations.",
+          "Improvement in inventory tracking efficiency through AI-driven monitoring.",
+          "Reduction in deployment time with containerized FastAPI and CI/CD integration."
+        ],
+        "technologies": ["Langchain[all]", "AutoGen", "Ollama", "HuggingFace", "Transformers", "FastAPI", "TensorFlow", "PyTorch", "Docker", "Kubernetes", "CI/CD", "MLOps"]},
+      {
+        "title": "AI Engineer",
+        "company": "WESEE",
+        "period": "July-2023 to Nov-2023",
+        "description": "Designed and deployed an AI-driven system to extract and structure unstructured data from Pakistan news and defense sources. Implemented an intelligent agent for data aggregation and analysis, enabling efficient query-based retrieval and actionable insights.",
+        "keyFeatures": [
+          "Developed a robust pipeline for extracting and structuring unstructured data.",
+          "Enabled efficient query-based retrieval for real-time insights.",
+          "Deployed an intelligent agent to analyze aggregated data.",
+          "Automated data processing to enhance decision-making efficiency.",
+          "Improved data accessibility and retrieval speed by 40%."
+        ],
+        "technologies": ["LangChain[all]", "Transformers", "HuggingFace", "FastAPI", "Docker", "BS4", "Crawl4AI"]
       },
       {
-        "title": "ML Engineer",
-        "company": "DataSmart Solutions",
-        "period": "2021 - 2023",
-        "description": "Developed and deployed natural language processing models for sentiment analysis and text classification. Created recommendation engines that increased user engagement by 25%. Optimized data pipelines for efficient processing of large datasets.",
-        "technologies": ["BERT", "Transformers", "PySpark", "AWS SageMaker", "Luigi"]
+        "title": "Machine Learning Engineer",
+        "company": "AIEnsure Pvt Ltd",
+        "period": "June-2022 to July-2024",
+        "description": "Developed end-to-end machine learning pipelines for structured data, images, and NLP, with a strong focus on model explainability, fairness, and feedback loops. Engineered synthetic data generation solutions and optimized document-based question-answering using LLMs.",
+        "keyFeatures": [
+          "Built ML pipelines ensuring robust model testing and performance evaluation.",
+          "Improved overall model accuracy by 10–15% through iterative refinements.",
+          "Designed and implemented synthetic data generation with 85% accuracy, reducing costs and enhancing data availability.",
+          "Developed Retrieval-Augmented Generation (RAG) pipelines for document-based question-answering with LLMs.",
+          "Created Power BI/Tableau dashboards for seamless data visualization and insightful analytics."
+        ],
+        "technologies": ["Scikit-learn", "Pandas", "NumPy", "Matplotlib", "PyTorch", "HuggingFace", "Transformers", "TensorFlow", "PyTorch", "FastAPI", "Docker", "CI/CD", "MLFlow", "Tableau", "Power-BI"]
       },
       {
-        "title": "Data Scientist",
-        "company": "Analytics Edge",
-        "period": "2019 - 2021",
-        "description": "Designed and implemented machine learning models for predictive analytics. Performed exploratory data analysis and feature engineering to improve model performance. Created data visualizations and dashboards for stakeholders.",
-        "technologies": ["Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Tableau"]
+        "title": "Machine Learning Intern",
+        "company": "Hynix Intermedia",
+        "period": "March-2022 to May-2022",
+        "description": " Provided effective support on live projects, solving complex problems and leveraging Machine Learning and Deep Learning to develop innovative solutions. Gained hands-on experience in AI model optimization and real-time issue resolution.",
+        "keyFeatures": [],
+        "technologies": ["Scikit-learn", "Pandas", "NumPy", "Matplotlib", "PyTorch", "TensorFlow"]
       }
     ]
   }
