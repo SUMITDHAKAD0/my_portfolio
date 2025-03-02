@@ -53,6 +53,11 @@ npm start
 yarn start
 ```
 
+3. Deploy
+```bash
+npm run deploy
+```
+
 ### Contact Form
 The contact form uses EmailJS to send messages without a backend server.
 
