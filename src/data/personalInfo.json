@@ -1,0 +1,42 @@
+{
+    "name": "John Smith",
+    "title": "ML Engineer",
+    "greeting": "Hello!",
+    "staticHeadline": "I Am",
+    "roles": [
+      "ML Engineer",
+      "Data Scientist",
+      "AI Researcher",
+      "Deep Learning Expert",
+      "NLP Specialist",
+      "Computer Vision Engineer"
+    ],
+    "description": "I'm a Machine Learning Engineer with extensive experience for over 5 years. My expertise is to develop intelligent systems, implement deep learning models, and solve complex data problems with state-of-the-art AI technologies.",
+    "location": "India",
+    "email": "sumit.dhakad9644@gmail.com",
+    "phone": "+91-9644726442",
+    "profileImage": "/images/profile_1.png",
+    "resumeLink": "/images/resume.pdf",
+    "socialMedia": [
+      {
+        "name": "LinkedIn",
+        "url": "https://github.com/SUMITDHAKAD0",
+        "icon": "linkedin"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/SUMITDHAKAD0",
+        "icon": "github"
+      },
+      {
+        "name": "Twitter",
+        "url": "https://twitter.com/yourhandle",
+        "icon": "twitter"
+      },
+      {
+        "name": "Medium",
+        "url": "https://medium.com/@yourusername",
+        "icon": "medium"
+      }
+    ]
+  }

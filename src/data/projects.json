@@ -1,0 +1,88 @@
+{
+    "projects": [
+      {
+        "title": "E-commerce Platform",
+        "category": "web-development",
+        "image": "/images/profile.jpg",
+        "description": "A full-stack e-commerce platform featuring real-time inventory management, secure payment processing, and an intuitive admin dashboard. Implemented features like cart management, order tracking, and product recommendations.",
+        "keyFeatures": [
+          "Implemented real-time inventory tracking using WebSocket",
+          "Integrated Stripe payment processing",
+          "Built responsive UI with server-side rendering",
+          "Achieved 98% test coverage with Jest and Cypress"
+        ],
+        "technologies": ["Next.js", "Node.js", "PostgreSQL", "Redis", "AWS"],
+        "demoLink": "https://github.com/SUMITDHAKAD0",
+        "codeLink": "https://github.com/SUMITDHAKAD0"
+      },
+      {
+        "title": "Task Management System",
+        "category": "web-application",
+        "image": "/images/profile_1.png",
+        "description": "A collaborative task management platform with real-time updates, file sharing, and team communication features. The system includes project timeline visualization, resource allocation, and automated reporting.",
+        "keyFeatures": [
+          "Built real-time collaboration using Socket.io",
+          "Implemented drag-and-drop task management",
+          "Designed microservices architecture",
+          "Containerized application using Docker"
+        ],
+        "technologies": ["React", "Express", "MongoDB", "Socket.io", "Docker"],
+        "demoLink": "#",
+        "codeLink": "https://github.com/SUMITDHAKAD0"
+      },
+      {
+        "title": "AI-Powered Analytics Dashboard",
+        "category": "machine-learning",
+        "image": "/images/profile_1.png",
+        "description": "A sophisticated analytics platform that leverages machine learning for data visualization and predictive analytics. Features include customizable dashboards, automated report generation, and trend analysis.",
+        "keyFeatures": [
+          "Integrated machine learning models for prediction",
+          "Built interactive data visualizations",
+          "Implemented real-time data processing",
+          "Optimized performance for large datasets"
+        ],
+        "technologies": ["React", "Python", "TensorFlow", "scikit-learn", "PostgreSQL"],
+        "demoLink": "#",
+        "codeLink": "https://github.com/SUMITDHAKAD0"
+      },
+      {
+        "title": "Natural Language Processing API",
+        "category": "nlp",
+        "image": "/images/profile_1.png",
+        "description": "A robust API for natural language processing tasks including sentiment analysis, entity recognition, text classification, and language detection. The API is designed for high throughput and accuracy.",
+        "keyFeatures": [
+          "Achieved 92% accuracy on sentiment analysis benchmark",
+          "Implemented custom named entity recognition model",
+          "Built scalable API serving 500+ requests per second",
+          "Deployed using serverless architecture"
+        ],
+        "technologies": ["Python", "Flask", "spaCy", "BERT", "AWS Lambda", "Docker"],
+        "demoLink": "#",
+        "codeLink": "https://github.com/SUMITDHAKAD0"
+      },
+      {
+        "title": "Computer Vision Object Detection",
+        "category": "computer-vision",
+        "image": "/images/profile_1.png",
+        "description": "A computer vision system for real-time object detection and tracking in video streams. Optimized for edge devices with limited computing resources.",
+        "keyFeatures": [
+          "Implemented YOLOv5 with custom training",
+          "Optimized for edge deployment using TensorRT",
+          "Achieved 30 FPS on Jetson Nano hardware",
+          "Built custom annotation tool for training data"
+        ],
+        "technologies": ["Python", "PyTorch", "OpenCV", "TensorRT", "CUDA"],
+        "demoLink": "#",
+        "codeLink": "https://github.com/SUMITDHAKAD0"
+      }
+    ],
+    "filters": [
+      { "name": "All", "value": "all" },
+      { "name": "Web Development", "value": "web-development" },
+      { "name": "Web Application", "value": "web-application" },
+      { "name": "Machine Learning", "value": "machine-learning" },
+      { "name": "NLP", "value": "nlp" },
+      { "name": "Computer Vision", "value": "computer-vision" },
+      { "name": "Blockchain", "value": "blockchain" }
+    ]
+  }

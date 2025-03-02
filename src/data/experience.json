@@ -1,0 +1,25 @@
+{
+    "experiences": [
+      {
+        "title": "Senior ML Engineer",
+        "company": "TechInnovate AI",
+        "period": "2023 - Present",
+        "description": "Lead the development of deep learning models for computer vision applications. Managed a team of 4 ML engineers. Improved model accuracy by 30% and reduced inference time by 40%. Implemented MLOps practices and CI/CD pipelines for model deployment.",
+        "technologies": ["TensorFlow", "PyTorch", "Docker", "Kubernetes", "MLflow"]
+      },
+      {
+        "title": "ML Engineer",
+        "company": "DataSmart Solutions",
+        "period": "2021 - 2023",
+        "description": "Developed and deployed natural language processing models for sentiment analysis and text classification. Created recommendation engines that increased user engagement by 25%. Optimized data pipelines for efficient processing of large datasets.",
+        "technologies": ["BERT", "Transformers", "PySpark", "AWS SageMaker", "Luigi"]
+      },
+      {
+        "title": "Data Scientist",
+        "company": "Analytics Edge",
+        "period": "2019 - 2021",
+        "description": "Designed and implemented machine learning models for predictive analytics. Performed exploratory data analysis and feature engineering to improve model performance. Created data visualizations and dashboards for stakeholders.",
+        "technologies": ["Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Tableau"]
+      }
+    ]
+  }

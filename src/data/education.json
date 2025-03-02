@@ -1,0 +1,31 @@
+{
+    "education": [
+      {
+        "degree": "Master of Science in Machine Learning",
+        "institution": "Stanford University",
+        "period": "2017 - 2019",
+        "description": "Focused on deep learning, computer vision, and natural language processing. Conducted research on attention mechanisms in neural networks.",
+        "courses": ["Advanced Machine Learning", "Deep Learning", "Computer Vision", "Natural Language Processing", "Statistical Methods"]
+      },
+      {
+        "degree": "Bachelor of Engineering in Computer Science",
+        "institution": "Massachusetts Institute of Technology",
+        "period": "2013 - 2017",
+        "description": "Specialized in artificial intelligence and data science. Graduated with honors (GPA: 3.92/4.0).",
+        "courses": ["Algorithms", "Data Structures", "Database Systems", "Introduction to Machine Learning", "Distributed Systems"]
+      },
+      {
+        "degree": "12th Specializations",
+        "institution": "Various Platforms",
+        "period": "2020 - Present",
+        "description": "Continuously enhancing skills through online courses and certifications.",
+        "certifications": [
+          "Deep Learning Specialization (Coursera)",
+          "TensorFlow Developer Certificate (Google)",
+          "Machine Learning Engineering for Production (MLOps) (Coursera)",
+          "AWS Certified Machine Learning Specialty",
+          "Microsoft Certified: Azure AI Engineer Associate"
+        ]
+      }
+    ]
+  }
