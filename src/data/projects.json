@@ -1,39 +1,60 @@
 {
     "projects": [
       {
-        "title": "E-commerce Platform",
-        "category": "web-development",
-        "image": "/my_portfolio/images/profile_2.jpg",
-        "description": "A full-stack e-commerce platform featuring real-time inventory management, secure payment processing, and an intuitive admin dashboard. Implemented features like cart management, order tracking, and product recommendations.",
+        "title": "AI-Powered Health Monitoring System for Indian Navy",
+        "category": "nlp",
+        "image": "/my_portfolio/images/health.png",
+        "description": "Led the development of a smart AI-driven health tracking and advisory system for Indian Navy employees, integrating intelligent medical insights, interactive dashboards, and real-time assistance.",
         "keyFeatures": [
-          "Implemented real-time inventory tracking using WebSocket",
-          "Integrated Stripe payment processing",
-          "Built responsive UI with server-side rendering",
-          "Achieved 98% test coverage with Jest and Cypress"
+          "Interactive Dashboard: Role-based access for Admin, Doctors, and Employees",
+          "AI-Powered Health Analysis: Users upload medical records; an AI agent analyzes reports and provides insights on causes, precautions, and diet",
+          "Knowledge-Driven AI Agent: Built on medical literature and multiple sources for accurate recommendations",
+          "AI Chatbot: Employees can discuss health concerns and receive real-time assistance",
+          "FastAPI Backend: Supports multi-user sessions for seamless access",
+          "Docker Deployment: Secured for local use on a private network Modern",
+          "UI with React: Built an engaging and responsive fronten"
         ],
-        "technologies": ["Next.js", "Node.js", "PostgreSQL", "Redis", "AWS"],
+        "technologies": ["Python", "FastAPI", "AI Agents", "HuggingFace", "NLP", "React", "Docker", "Vector Database", "MySQL"],
         "demoLink": "https://github.com/SUMITDHAKAD0",
         "codeLink": "https://github.com/SUMITDHAKAD0"
       },
       {
-        "title": "Task Management System",
-        "category": "web-application",
-        "image": "/my_portfolio/images/profile_1.png",
-        "description": "A collaborative task management platform with real-time updates, file sharing, and team communication features. The system includes project timeline visualization, resource allocation, and automated reporting.",
+        "title": "Intelligent News & Defense Data Extraction System",
+        "category": "nlp",
+        "image": "/my_portfolio/images/wesee.PNG",
+        "description": "A robust system for extracting and structuring unstructured data from Pakistani news and defense sources, enabling efficient query-based retrieval and insightful analysis through an intelligent agent.",
         "keyFeatures": [
-          "Built real-time collaboration using Socket.io",
-          "Implemented drag-and-drop task management",
-          "Designed microservices architecture",
-          "Containerized application using Docker"
+          "Web Scraping: Implemented Crawl4AI to scrape and collect data from multiple Pakistani news and defense websites, storing structured metadata in a MySQL database",
+          "Data Processing: Applied text preprocessing, cleaning, and normalization to extract meaningful insights",
+          "Vector Search: Created embeddings and stored them in a Milvus vector database for efficient similarity search",
+          "RAG Pipeline: Built an Agentic RAG (Retrieval-Augmented Generation) pipeline with reranking and ensemble retrieval for high-accuracy responses",
+          "Deployment: Backend powered by FastAPI, frontend developed with JavaScript, HTML, and CSS"
         ],
-        "technologies": ["React", "Express", "MongoDB", "Socket.io", "Docker"],
+        "technologies": ["Python", "Langchain", "Crawl4AI", "FastAPI", "Milvus", "MySQL", "RAG", "JavaScript", "HTML", "CSS"],
         "demoLink": "#",
         "codeLink": "https://github.com/SUMITDHAKAD0"
       },
       {
+        "title": "Real-Time Road Scenario Object Detection",
+        "category": "computer-vision",
+        "image": "/my_portfolio/images/traffic.jpg",
+        "description": "A computer vision system for real-time detection of multiple road-related objects, including traffic signs, boards, speed breakers, and more. Trained and fine-tuned a YOLOv8 model on a custom dataset for high-accuracy predictions.",
+        "keyFeatures": [
+          "Implemented YOLOv8 with custom training on a self-collected dataset",
+          "Annotated data in COCO format and converted to YOLO for training",
+          "Achieved 89% mAP on the fine-tuned model",
+          "Deployed using FastAPI for backend processing",
+          "Built an interactive Streamlit application for real-time detection via video, image, and camera input",
+          "Designed for efficient real-time inference on various deployment platforms"
+        ],
+        "technologies": ["Python", "PyTorch", "OpenCV", "Ultralytics", "YOLOv8", "FastAPI"],
+        "demoLink": "#",
+        "codeLink": "https://github.com/SUMITDHAKAD0/Road-Scenario-Object-Detection"
+      },
+      {
         "title": "AI-Powered Analytics Dashboard",
         "category": "machine-learning",
-        "image": "/my_portfolio/images/profile_1.png",
+        "image": "/my_portfolio/images/Rag.png",
         "description": "A sophisticated analytics platform that leverages machine learning for data visualization and predictive analytics. Features include customizable dashboards, automated report generation, and trend analysis.",
         "keyFeatures": [
           "Integrated machine learning models for prediction",
@@ -42,36 +63,6 @@
           "Optimized performance for large datasets"
         ],
         "technologies": ["React", "Python", "TensorFlow", "scikit-learn", "PostgreSQL"],
-        "demoLink": "#",
-        "codeLink": "https://github.com/SUMITDHAKAD0"
-      },
-      {
-        "title": "Natural Language Processing API",
-        "category": "nlp",
-        "image": "/my_portfolio/images/profile_1.png",
-        "description": "A robust API for natural language processing tasks including sentiment analysis, entity recognition, text classification, and language detection. The API is designed for high throughput and accuracy.",
-        "keyFeatures": [
-          "Achieved 92% accuracy on sentiment analysis benchmark",
-          "Implemented custom named entity recognition model",
-          "Built scalable API serving 500+ requests per second",
-          "Deployed using serverless architecture"
-        ],
-        "technologies": ["Python", "Flask", "spaCy", "BERT", "AWS Lambda", "Docker"],
-        "demoLink": "#",
-        "codeLink": "https://github.com/SUMITDHAKAD0"
-      },
-      {
-        "title": "Computer Vision Object Detection",
-        "category": "computer-vision",
-        "image": "/my_portfolio/images/profile_1.png",
-        "description": "A computer vision system for real-time object detection and tracking in video streams. Optimized for edge devices with limited computing resources.",
-        "keyFeatures": [
-          "Implemented YOLOv5 with custom training",
-          "Optimized for edge deployment using TensorRT",
-          "Achieved 30 FPS on Jetson Nano hardware",
-          "Built custom annotation tool for training data"
-        ],
-        "technologies": ["Python", "PyTorch", "OpenCV", "TensorRT", "CUDA"],
         "demoLink": "#",
         "codeLink": "https://github.com/SUMITDHAKAD0"
       }

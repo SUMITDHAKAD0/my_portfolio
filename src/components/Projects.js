@@ -5,16 +5,31 @@ const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all');
   const [projects, setProjects] = useState([]);
   const [filters, setFilters] = useState([]);
+  const [expandedFeatures, setExpandedFeatures] = useState({});
   
   useEffect(() => {
     // In a real app, this would be an API call or import
     setProjects(projectsData.projects);
     setFilters(projectsData.filters);
+    
+    // Initialize all projects with collapsed features
+    const initialExpandState = {};
+    projectsData.projects.forEach((project, index) => {
+      initialExpandState[index] = false;
+    });
+    setExpandedFeatures(initialExpandState);
   }, []);
   
   const filteredProjects = activeFilter === 'all' 
     ? projects 
     : projects.filter(project => project.category === activeFilter);
+    
+  const toggleFeatures = (index) => {
+    setExpandedFeatures(prev => ({
+      ...prev,
+      [index]: !prev[index]
+    }));
+  };
 
   return (
     <section id="projects" className="py-20 bg-primary">
@@ -84,14 +99,42 @@ const Projects = () => {
                 <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
                 <p className="text-light-gray mb-6 text-sm leading-relaxed">{project.description}</p>
                 
-                {/* Key Features Section */}
-                <div className="mb-6">
-                  <h4 className="text-base font-semibold mb-3 text-secondary">Key Features:</h4>
-                  <ul className="list-disc list-inside space-y-1 text-sm text-light-gray">
-                    {project.keyFeatures && project.keyFeatures.map((feature, idx) => (
-                      <li key={idx}>{feature}</li>
-                    ))}
-                  </ul>
+                {/* Key Features Section - Now Collapsible with Border */}
+                <div className="mb-6 border border-secondary/20 rounded-lg overflow-hidden">
+                  <button 
+                    onClick={() => toggleFeatures(index)}
+                    className="flex items-center justify-between w-full text-left text-base font-semibold p-3 text-secondary hover:text-secondary/80 transition-colors focus:outline-none bg-secondary/5"
+                  >
+                    <span>Key Features:</span>
+                    <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      width="20" 
+                      height="20" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      strokeWidth="2" 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round"
+                      className={`transition-transform ${expandedFeatures[index] ? 'rotate-180' : ''}`}
+                    >
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                  
+                  <div 
+                    className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                      expandedFeatures[index] ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+                  >
+                    <div className="p-3 border-t border-secondary/20 bg-white/5">
+                      <ul className="list-disc list-inside space-y-1 text-sm text-light-gray">
+                        {project.keyFeatures && project.keyFeatures.map((feature, idx) => (
+                          <li key={idx}>{feature}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
                 </div>
                 
                 <div className="flex flex-wrap gap-2">

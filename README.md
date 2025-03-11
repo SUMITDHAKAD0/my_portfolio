@@ -5,7 +5,7 @@ A modern, responsive portfolio website showcasing ML engineering and data scienc
 
 ## Live Demo
 
-[View the live site](https://your-portfolio-url.com)
+[View the live site](https://sumitdhakad0.github.io/my_portfolio/)
 
 ## Features
 
@@ -53,7 +53,7 @@ npm start
 yarn start
 ```
 
-3. Deploy
+4. Deploy
 ```bash
 npm run deploy
 ```
