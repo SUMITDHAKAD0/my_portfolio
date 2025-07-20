@@ -21,7 +21,7 @@
       {
         "title": "AI-Powered Material Certificate Validation System for Circor",
         "category": "Computer Vision",
-        "image": "/my_portfolio/images/circor.PNG",
+        "image": "/my_portfolio/images/circor.png",
         "description": "Developed a robust AI-driven system for Circor to automate the extraction and validation of material certificate data. The platform intelligently processes complex PDFs, identifies and structures multiple embedded tables across pages, and validates extracted chemical, mechanical, and heat treatment properties against predefined industrial standards.",
         "keyFeatures": [
           "AI-Driven Table Detection & Structure Recognition: Leveraged Vision-Language Models (VLMs) and image processing techniques to detect and extract multiple tables from unstructured PDFs across pages, organizing them into structured formats (chemical, mechanical, heat treatment) with 92% accuracy",
@@ -48,7 +48,7 @@
       {
         "title": "AI Chat Assistant for HR & Document Queries – MDL (Mazagon Dockyard Ltd.)",
         "category": "Gen-AI",
-        "image": "/my_portfolio/images/mdl_chatbot.PNG",
+        "image": "/my_portfolio/images/mdl_chatbot.png",
         "description": "Designed and deployed an AI-powered conversational assistant for MDL to automate and streamline internal HR and passport/documentation queries. The system combines Retrieval-Augmented Generation (RAG) with real-time database access, achieving high accuracy in query resolution while significantly reducing manual overhead.",
         "keyFeatures": [
           "AI Agent with RAG Pipeline: Implemented a Retrieval-Augmented Generation system achieving 91% accuracy on HR and documentation query resolution",
