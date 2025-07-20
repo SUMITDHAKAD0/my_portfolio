@@ -12,21 +12,78 @@
           "AI Chatbot: Employees can discuss health concerns and receive real-time assistance",
           "FastAPI Backend: Supports multi-user sessions for seamless access",
           "Docker Deployment: Secured for local use on a private network Modern",
-          "UI with React: Built an engaging and responsive fronten"
+          "UI with React: Built an engaging and responsive fronten with seprate role based login and UI"
         ],
         "technologies": ["Python", "FastAPI", "AI Agents", "HuggingFace", "NLP", "React", "Docker", "Vector Database", "MySQL"],
         "demoLink": "https://github.com/SUMITDHAKAD0",
         "codeLink": "https://github.com/SUMITDHAKAD0"
       },
       {
-        "title": "Intelligent News & Defense Data Extraction System",
+        "title": "AI-Powered Material Certificate Validation System for Circor",
+        "category": "Computer Vision",
+        "image": "/my_portfolio/images/circor.PNG",
+        "description": "Developed a robust AI-driven system for Circor to automate the extraction and validation of material certificate data. The platform intelligently processes complex PDFs, identifies and structures multiple embedded tables across pages, and validates extracted chemical, mechanical, and heat treatment properties against predefined industrial standards.",
+        "keyFeatures": [
+          "AI-Driven Table Detection & Structure Recognition: Leveraged Vision-Language Models (VLMs) and image processing techniques to detect and extract multiple tables from unstructured PDFs across pages, organizing them into structured formats (chemical, mechanical, heat treatment) with 92% accuracy",
+          "Standard-Based Validation: Validates all extracted properties against fixed material standards to ensure compliance and integrity",
+          "FastAPI Backend: Provides a secure, session-based interface to handle file uploads, validation workflows, and data retrieval",
+          "MongoDB Storage: Stores raw and validated data with full traceability and audit logging",
+          "React Frontend: Built a responsive UI with user authentication, interactive dashboards, and a searchable record system",
+          "Scalable Pipeline: End-to-end processing architecture enabling continuous ingestion and intelligent parsing of new certificates"
+        ],
+        "technologies": [
+          "Python",
+          "FastAPI",
+          "React",
+          "MongoDB",
+          "VLLM (Vision-Language Models)",
+          "Image Processing",
+          "AI-Powered Table Detection",
+          "PDF Parsing",
+          "Session Management"
+        ],
+        "demoLink": "https://github.com/SUMITDHAKAD0",
+        "codeLink": "https://github.com/SUMITDHAKAD0"
+      }, 
+      {
+        "title": "AI Chat Assistant for HR & Document Queries – MDL (Mazagon Dockyard Ltd.)",
+        "category": "Gen-AI",
+        "image": "/my_portfolio/images/mdl_chatbot.PNG",
+        "description": "Designed and deployed an AI-powered conversational assistant for MDL to automate and streamline internal HR and passport/documentation queries. The system combines Retrieval-Augmented Generation (RAG) with real-time database access, achieving high accuracy in query resolution while significantly reducing manual overhead.",
+        "keyFeatures": [
+          "AI Agent with RAG Pipeline: Implemented a Retrieval-Augmented Generation system achieving 91% accuracy on HR and documentation query resolution",
+          "Multi-Source Query Handling: Seamlessly integrates MySQL for structured internal data and real-time web sources for unstructured queries",
+          "Document Pipeline: Supports 10+ file formats (PDF, Word, Excel, etc.) with preprocessing and vector indexing using LanceDB",
+          "LLM on Runpod: Reduced inference cost by 65% using serverless deployment of large language models via Runpod",
+          "LangGraph Orchestration: Managed multi-turn conversations and session memory using LangGraph for improved context retention",
+          "FastAPI Backend: Secure, session-based API layer for handling chat, search, and file ingestion workflows",
+          "React Frontend: Built a clean and responsive chat UI with login, history tracking, and real-time feedback",
+          "Full Deployment Stack: Hosted backend and frontend on Hostinger with Nginx reverse proxy, ensuring 99.9% uptime in production"
+        ],
+        "technologies": [
+          "FastAPI",
+          "MySQL",
+          "LanceDB",
+          "LangGraph",
+          "Runpod",
+          "Nginx",
+          "React",
+          "LLM",
+          "RAG",
+          "Session Management"
+        ],
+        "demoLink": "https://github.com/SUMITDHAKAD0",
+        "codeLink": "https://github.com/SUMITDHAKAD0"
+      },      
+      {
+        "title": "Intelligent News & Defense Data Extraction Agent",
         "category": "nlp",
         "image": "/my_portfolio/images/wesee.PNG",
         "description": "A robust system for extracting and structuring unstructured data from Pakistani news and defense sources, enabling efficient query-based retrieval and insightful analysis through an intelligent agent.",
         "keyFeatures": [
           "Web Scraping: Implemented Crawl4AI to scrape and collect data from multiple Pakistani news and defense websites, storing structured metadata in a MySQL database",
           "Data Processing: Applied text preprocessing, cleaning, and normalization to extract meaningful insights",
-          "Vector Search: Created embeddings and stored them in a Milvus vector database for efficient similarity search",
+          "Vector Database: Created embeddings and stored them in a Milvus vector database for efficient similarity search",
           "RAG Pipeline: Built an Agentic RAG (Retrieval-Augmented Generation) pipeline with reranking and ensemble retrieval for high-accuracy responses",
           "Deployment: Backend powered by FastAPI, frontend developed with JavaScript, HTML, and CSS"
         ],
@@ -69,11 +126,11 @@
     ],
     "filters": [
       { "name": "All", "value": "all" },
-      { "name": "Web Development", "value": "web-development" },
-      { "name": "Web Application", "value": "web-application" },
       { "name": "Machine Learning", "value": "machine-learning" },
+      { "name": "Gen-AI", "value": "blockchain" },
       { "name": "NLP", "value": "nlp" },
       { "name": "Computer Vision", "value": "computer-vision" },
-      { "name": "Blockchain", "value": "blockchain" }
+      { "name": "Web Development", "value": "web-development" },
+      { "name": "Web Application", "value": "web-application" }
     ]
   }

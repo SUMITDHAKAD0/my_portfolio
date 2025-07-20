@@ -20,7 +20,9 @@
         { "name": "CI/CD", "proficiency": 80 },
         { "name": "GitHub Actions", "proficiency": 85 },
         { "name": "Power-BI", "proficiency": 60 },
-        { "name": "Monitoring & Logging", "proficiency": 80 }
+        { "name": "Monitoring & Logging", "proficiency": 80 },
+        { "name": "Nginx", "proficiency": 75 },
+        { "name": "Runpod", "proficiency": 75 }
       ]
     },
     {
