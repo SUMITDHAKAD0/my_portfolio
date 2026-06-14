@@ -1,8 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import personalInfoData from '../data/personalInfo.json';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [title, setTitle] = useState('ML Engineer');
+
+  useEffect(() => {
+    setTitle(personalInfoData.title);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,7 +35,7 @@ const Navbar = () => {
     }`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="text-2xl font-bold">
-          <a href="#home">ML Engineer</a>
+          <a href="#home">{title}</a>
         </div>
         
         <div className="lg:hidden">
@@ -61,6 +67,7 @@ const Navbar = () => {
           <li><a href="#experience" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-secondary transition-colors">Experience</a></li>
           <li><a href="#projects" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-secondary transition-colors">Projects</a></li>
           <li><a href="#education" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-secondary transition-colors">Education</a></li>
+          <li><a href="#certifications" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-secondary transition-colors">Certifications</a></li>
           <li><a href="#achievements" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-secondary transition-colors">Achievements</a></li>
           <li><a href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-secondary transition-colors">Contact</a></li>
         </ul>

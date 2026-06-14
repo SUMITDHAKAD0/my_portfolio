@@ -1,12 +1,13 @@
 {
     "name": "Sumit Dhakad",
-    "title": "ML Engineer",
+    "title": "GenAI & Agentic Systems Consultant",
     "greeting": "Hello!",
     "staticHeadline": "I Am",
     "roles": [
       "Sumit Dhakad",
+      "Generative AI Specialist",
+      "Agentic AI Specialist",
       "Machine Learning Engineer",
-      "Genrative AI Specialist",
       "NLP Specialist",
       "Computer Vision Specialist"
     ],
@@ -19,7 +20,7 @@
     "socialMedia": [
       {
         "name": "LinkedIn",
-        "url": "https://github.com/SUMITDHAKAD0",
+        "url": "https://www.linkedin.com/in/sumit-dhakad-3213811b1",
         "icon": "linkedin"
       },
       {
@@ -28,9 +29,9 @@
         "icon": "github"
       },
       {
-        "name": "Twitter",
-        "url": "https://twitter.com/yourhandle",
-        "icon": "twitter"
+        "name": "HackerRank",
+        "url": "https://www.hackerrank.com/profile/sumit_dhakad15",
+        "icon": "hackerrank"
       },
       {
         "name": "Medium",

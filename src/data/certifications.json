@@ -1,0 +1,28 @@
+{
+  "certifications": [
+    {
+      "title": "Machine Learning Specialization",
+      "issuer": "Nelumbus Educare",
+      "date": "2020",
+      "credentialId": "",
+      "credentialUrl": "/my_portfolio/images/Sumit_Dhakad_NELUMBUS_ML.pdf",
+      "description": "Comprehensive ML specialization covering supervised learning, neural networks, and optimization techniques."
+    },
+    {
+      "title": "Deep Learning Specialization",
+      "issuer": "Nelumbus Educare",
+      "date": "2021",
+      "credentialId": "",
+      "credentialUrl": "/my_portfolio/images/Sumit_Dhakad_Nelumbus.pdf",
+      "description": "5-course specialization on neural networks, CNNs, RNNs, and sequence models."
+    },
+    {
+      "title": "AWS Certified Machine Learning - Specialty",
+      "issuer": "Amazon Web Services",
+      "date": "2022",
+      "credentialId": "AWS-ML-SPECIALTY",
+      "credentialUrl": "https://aws.amazon.com/certification/",
+      "description": "Advanced knowledge of ML services on AWS including SageMaker, feature store, and model deployment."
+    }
+  ]
+}

@@ -92,38 +92,75 @@ const Hero = () => {
             <path d="M2.846 6.887c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403h6.958l5.378 11.795 4.728-11.795h6.633v.403l-1.916 1.837c-.165.126-.247.333-.213.538v13.498c-.034.204.048.411.213.537l1.871 1.837v.403h-9.412v-.403l1.939-1.882c.19-.19.19-.246.19-.537v-10.91l-5.389 13.688h-.728l-6.275-13.688v9.174c-.052.385.076.774.347 1.052l2.521 3.058v.404h-7.148v-.404l2.521-3.058c.27-.279.39-.67.325-1.052v-10.608z"/>
           </svg>
         );
+      case 'hackerrank':
+        return (
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm3.5 18h-2v-9h-1.5v9h-2v-9H8.5v9h-2v-9H5v-2h10.5z"/>
+          </svg>
+        );
       default:
         return null;
     }
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center relative overflow-hidden">
-      {/* Dark overlay with blue-green gradient similar to the image */}
-      <div className="absolute inset-0 bg-[#0a2638] z-0"></div>
+    <section id="home" className="min-h-screen flex items-center relative overflow-hidden pt-32 pb-20">
+      {/* Animated gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0a2638] via-[#0f3d52] to-[#0a2638] z-0"></div>
+      
+      {/* Animated gradient orbs in background */}
+      <div className="absolute top-20 -left-20 w-72 h-72 bg-[#56cca7]/10 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute -bottom-20 -right-20 w-96 h-96 bg-[#56cca7]/5 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
+      
+      {/* Animated lines decoration */}
+      <div className="absolute top-40 right-10 w-64 h-1 bg-gradient-to-r from-[#56cca7] to-transparent opacity-20 hidden lg:block"></div>
+      <div className="absolute bottom-32 left-10 w-48 h-1 bg-gradient-to-r from-[#56cca7] to-transparent opacity-20 hidden lg:block"></div>
       
       {/* Main content container */}
-      <div className="container mx-auto px-4 relative z-10 flex flex-col lg:flex-row items-center justify-between">
-        {/* Left text section */}
-        <div className="lg:w-1/2 text-white z-10 pt-20 lg:pt-0">
-          <h2 className="text-6xl md:text-7xl font-extrabold mb-4">{personalInfo.greeting}</h2>
-          <h3 className="text-5xl md:text-6xl font-bold mb-8 relative pb-6">
-            {personalInfo.staticHeadline} <span className="text-[#56cca7]">{displayRole}</span>
-            <span className="absolute bottom-0 left-0 w-32 h-1 bg-[#56cca7]"></span>
-          </h3>
-          <p className="text-lg text-gray-300 mb-10 max-w-xl">
+      <div className="container mx-auto px-4 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+        {/* Left text section - independent */}
+        <div className="text-white z-10">
+          {/* Greeting with animation */}
+          <div className="mb-6 overflow-hidden">
+            <h4 className="text-5xl sm:text-6xl md:text-7xl font-extrabold mb-2 animate-fade-in-up">
+              {personalInfo.greeting}
+            </h4>
+          </div>
+          
+          {/* Main heading with gradient text - natural height */}
+          <div className="mb-8 overflow-hidden">
+            <div className="relative pb-6">
+              <h4 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight animate-fade-in-up" style={{animationDelay: '0.2s'}}>
+                {personalInfo.staticHeadline}
+                <span className="bg-gradient-to-r from-[#56cca7] via-[#4fb59a] to-[#56cca7] bg-clip-text text-transparent animate-pulse">
+                  {' '}{displayRole}
+                </span>
+              </h4>
+              <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-[#56cca7] to-transparent w-32 md:w-48"></div>
+            </div>
+          </div>
+          
+          {/* Title badge */}
+          <div className="mb-8 inline-block">
+            <span className="px-4 py-2 rounded-full border-2 border-[#56cca7] text-[#56cca7] text-sm md:text-base font-semibold hover:bg-[#56cca7] hover:text-[#0a2638] transition-all duration-300 inline-block animate-fade-in-up" style={{animationDelay: '0.4s'}}>
+              {personalInfo.title}
+            </span>
+          </div>
+          
+          {/* Description with better styling */}
+          <p className="text-base md:text-lg text-gray-300 mb-10 max-w-2xl leading-relaxed animate-fade-in-up" style={{animationDelay: '0.6s'}}>
             {personalInfo.description}
           </p>
           
-          {/* Social Media Links */}
-          <div className="flex flex-wrap gap-4">
+          {/* Social Media Links with enhanced styling */}
+          <div className="flex flex-wrap gap-4 mb-8 animate-fade-in-up" style={{animationDelay: '0.8s'}}>
             {personalInfo.socialMedia && personalInfo.socialMedia.map((social, index) => (
               <a 
                 key={index}
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-white hover:border-[#56cca7] hover:bg-[#56cca7] hover:text-[#0a2638] transition-all duration-300"
+                className="flex items-center justify-center w-14 h-14 rounded-full border-2 border-[#56cca7] text-[#56cca7] hover:border-white hover:bg-[#56cca7] hover:text-[#0a2638] hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-[#56cca7]/50"
                 aria-label={social.name}
               >
                 {renderSocialIcon(social.icon)}
@@ -133,31 +170,75 @@ const Hero = () => {
             <a 
               href={personalInfo.resumeLink}
               download
-              className="ml-2 px-6 py-3 border-2 border-white rounded-full font-medium hover:bg-[#56cca7] hover:border-[#56cca7] hover:text-[#0a2638] transition-all duration-300"
+              className="ml-4 px-8 py-3 border-2 border-[#56cca7] text-[#56cca7] rounded-full font-bold bg-[#56cca7]/10 hover:bg-[#56cca7] hover:text-[#0a2638] transition-all duration-300 shadow-lg hover:shadow-[#56cca7]/50 hover:scale-105"
             >
               Download CV
             </a>
           </div>
+          
+          {/* Scroll indicator */}
+          <div className="flex items-center gap-2 text-[#56cca7] text-sm mt-12 animate-bounce">
+            <span>Scroll to explore</span>
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </div>
         </div>
         
-        {/* Right profile image section - similar to the image style */}
-        <div className="lg:w-1/2 mt-16 lg:mt-0 relative flex justify-end">
-          <div className="relative">
-            {/* Colored overlay for the image - creates that blue-green effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#56cca7]/20 to-[#0a2638]/0 z-10 mix-blend-color-dodge"></div>
+        {/* Right profile image section - completely independent */}
+        <div className="relative flex justify-center lg:justify-end lg:sticky lg:top-40 h-fit">
+          <div className="relative animate-fade-in-up" style={{animationDelay: '1s'}}>
+            {/* Glowing border effect */}
+            <div className="absolute -inset-4 bg-gradient-to-r from-[#56cca7] to-[#0a2638] rounded-lg blur-xl opacity-20"></div>
             
-            {/* Image */}
-            <img 
-              src={personalInfo.profileImage} 
-              alt={personalInfo.name} 
-              className="relative z-0 max-h-[80vh] object-cover" 
-            />
+            {/* Floating animated border */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-[#56cca7] via-transparent to-[#56cca7] rounded-lg opacity-40 animate-pulse"></div>
+            
+            {/* Image container */}
+            <div className="relative rounded-lg overflow-hidden shadow-2xl">
+              {/* Colored overlay for the image */}
+              <div className="absolute inset-0 bg-gradient-to-r from-[#56cca7]/30 to-[#0a2638]/10 z-10 mix-blend-color-dodge"></div>
+              
+              {/* Image */}
+              <img 
+                src={personalInfo.profileImage} 
+                alt={personalInfo.name} 
+                className="relative z-0 max-h-[60vh] md:max-h-[70vh] w-auto object-cover rounded-lg" 
+              />
+              
+              {/* Corner accents */}
+              <div className="absolute top-0 left-0 w-20 h-20 border-t-2 border-l-2 border-[#56cca7] rounded-tl-lg"></div>
+              <div className="absolute bottom-0 right-0 w-20 h-20 border-b-2 border-r-2 border-[#56cca7] rounded-br-lg"></div>
+            </div>
             
             {/* Vertical line decoration */}
-            <div className="absolute top-10 bottom-10 right-full mr-12 w-px bg-[#56cca7] hidden lg:block"></div>
+            <div className="absolute top-10 bottom-10 right-full mr-8 md:mr-12 w-px bg-gradient-to-b from-[#56cca7] to-transparent hidden lg:block"></div>
+            
+            {/* Floating stats or badges */}
+            {/* <div className="absolute -bottom-6 -left-6 bg-[#56cca7] text-[#0a2638] px-4 py-3 rounded-lg shadow-lg font-bold text-sm md:text-base animate-bounce" style={{animationDelay: '0.5s'}}>
+              3+ Years Experience
+            </div> */}
           </div>
         </div>
       </div>
+      
+      {/* Add CSS animations */}
+      <style>{`
+        @keyframes fade-in-up {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        .animate-fade-in-up {
+          animation: fade-in-up 0.8s ease-out forwards;
+          opacity: 0;
+        }
+      `}</style>
     </section>
   );
 };
