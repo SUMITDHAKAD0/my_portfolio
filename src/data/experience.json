@@ -1,9 +1,32 @@
 {
     "experiences": [
       {
+        "title": "AI and Data Science Engineer II",
+        "company": "Deloitte",
+        "period": "Jan-2026 to Present",
+        "description": "Designed and developed a centralized AI-powered business intelligence and partner discovery platform to help Deloitte identify, evaluate, and qualify U.S. small businesses for large project opportunities. The platform combines government spending data, internal organizational information, and external web intelligence into a continuously enriched knowledge system, enabling teams to research businesses faster and make data-driven decisions through an AI assistant.",
+        "keyFeatures": [
+          "U.S. Spending Data Pipeline: Built a scalable pipeline to ingest and process 100+ GB of U.S. government spending data, using GCP Cloud Storage, PostgreSQL, and BigQuery, with automated filtering and transformation of relevant datasets.",
+          "Organization Intelligence Pipeline: Developed a separate data pipeline to collect and enrich information from websites, social media, internal sources, and public datasets for newly onboarded organizations.",
+          "LLM-Based Data Processing: Used LLMs to understand, clean, validate, and normalize unstructured business information, improving the quality and consistency of downstream data.",
+          "Structured + Semantic Knowledge Layer: Automatically transformed processed information into semantic chunks for Vector DB and structured business attributes for BigQuery, enabling both RAG-based and analytical querying.",
+          "Persistent Organization Knowledge: Built a reusable knowledge base where organization data is collected once and continuously enriched. For subsequent queries, the system first uses existing internal knowledge and retrieves only missing or updated information from external sources.",
+          "Multi-Agent AI Assistant: Developed a LangGraph-based multi-agent assistant with multiple tools to query BigQuery, Vector DB, internal data, and web sources, combining results to answer complex business questions.",
+          "Rich Business Intelligence Output: Enabled the assistant to generate contextual explanations, data tables, summaries, and visual representations based on the retrieved information and user queries.",
+          "Automated Onboarding: Implemented an organization onboarding workflow where submitting a business name and website automatically triggers the complete enrichment pipeline, from data collection through AI processing, structured storage, and vector indexing.",
+          "Enterprise Application: Built the platform using FastAPI, React, WebSockets, GCP, Docker, and Nginx, supporting real-time interaction and scalable deployment.",
+          "Processed and analyzed 250+ GB of large-scale government spending data.",
+          "Reduced repetitive organization research by ~60–70% through reusable internal knowledge and automated enrichment.",
+          "Reduced organization research turnaround from hours of manual investigation to minutes for previously indexed businesses.",
+          "Enabled teams to evaluate hundreds of organizations through a centralized workflow instead of researching information across multiple disconnected sources.",
+          "Created a reusable architecture capable of continuously incorporating new organizations and newly available information without rebuilding the knowledge base."
+        ],
+        "technologies": ["Python", "LangGraph", "LangChain", "OpenAI", "FastAPI", "React", "WebSockets", "GCP", "BigQuery", "Bucket", "PostgreSQL", "Vector DB", "Docker", "Nginx", "RAG", "LLMs", "Multi-Agent AI", "Data Engineering"]
+      },
+      {
         "title": "Machine Learning Engineer II",
         "company": "Verge Impex LLP",
-        "period": "Nov-2024 to Present",
+        "period": "Nov-2024 to Jan-2026",
         "description": "Led the development of a secure, offline, on-prem AI-based health monitoring system for the medical department, integrating an intelligent agent workflow for high-accuracy insights. Spearheaded the design of a scalable FastAPI solution with automated testing and CI/CD for seamless deployment.",
         "keyFeatures": [
           "98% accuracy achieved in AI-driven health monitoring insights.",
@@ -11,7 +34,8 @@
           "Improvement in inventory tracking efficiency through AI-driven monitoring.",
           "Reduction in deployment time with containerized FastAPI and CI/CD integration."
         ],
-        "technologies": ["Langchain[all]", "AutoGen", "Ollama", "HuggingFace", "Transformers", "FastAPI", "TensorFlow", "PyTorch", "Docker", "Kubernetes", "CI/CD", "MLOps"]},
+        "technologies": ["Langchain[all]", "AutoGen", "Ollama", "HuggingFace", "Transformers", "FastAPI", "TensorFlow", "PyTorch", "Docker", "Kubernetes", "CI/CD", "MLOps"]
+      },
       {
         "title": "AI Engineer",
         "company": "WESEE",
