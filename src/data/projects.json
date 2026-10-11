@@ -1,6 +1,27 @@
 {
     "projects": [
       {
+        "title": "TRAI SMS Classification & Compliance Platform",
+        "category": "nlp",
+        "image": "/my_portfolio/images/trai.png",
+        "description": "Built a full-stack multi-tenant SaaS platform for automating TRAI regulatory SMS classification using a fine-tuned HuggingFace transformer. Deployed on a GCP Compute Engine instance with PostgreSQL, Docker, and Nginx — enabling telecom businesses to classify bulk SMS data with AI and route low-confidence results through a human review workflow, reducing manual compliance effort by 80%.",
+        "keyFeatures": [
+          "AI-Powered Bulk Classification: Analysts upload CSV/XLSX files; a HuggingFace text-classification pipeline classifies every SMS row with a predicted label and confidence score across 3 regulatory categories, processing 50,000+ rows per run",
+          "Human Review Workflow: Rows below a configurable confidence threshold (default 0.70) are automatically flagged and routed to analysts or viewers for manual label correction, reducing human effort by focusing review on only 5–10% of data",
+          "Role-Based Access Control: Four-tier RBAC (Super Admin, Admin, Analyst, Viewer) with role-specific dashboards, gated routes, and workspace-scoped data access across",
+          "Cryptographic Licence System: Standalone RSA key-pair licence server issues and validates licences; all analyst operations are gated behind a live licence check with a 300-second validation cache for performance",
+          "Model Training Pipeline: Super Admin can trigger fine-tuning runs on 50+ reviewed samples, monitor metrics (F1, precision, recall, confusion matrix), and hot-swap the active model version without a server restart",
+          "Immutable Audit Logging: Every API action is recorded with actor, role, endpoint, status code, and timestamp — 100% traceability for compliance audits, accessible exclusively to Super Admin",
+          "Analytics & Reports: Post-classification analytics include label distribution pie charts, evaluation metrics, and downloadable CSV reports per classification run, enabling data-driven compliance decisions",
+          "Onboarding Wizard: 3-step tenant onboarding (profile → company → licence activation) gates the entire platform until complete, ensuring secure and verified access from day one",
+          "Modern React Frontend: Role-aware SPA with paginated tables, image crop modal, OTP-based password reset, and real-time classification polling across 4 distinct role-based dashboard views",
+          "GCP Deployment: Hosted on GCP Compute Engine with Docker Compose, PostgreSQL, and Nginx reverse proxy for production-grade reliability, scalability, and persistent volume storage"
+        ],
+        "technologies": ["Python", "FastAPI", "HuggingFace Transformers", "PostgreSQL", "SQLAlchemy", "Alembic", "JWT", "React", "Tailwind CSS", "Radix UI", "Recharts", "Docker", "Nginx", "GCP", "Pandas"],
+        "demoLink": "https://github.com/SUMITDHAKAD0",
+        "codeLink": "https://github.com/SUMITDHAKAD0"
+      },
+      {
         "title": "AI-Powered Health Monitoring System for Indian Navy",
         "category": "nlp",
         "image": "/my_portfolio/images/health.png",
