@@ -1,6 +1,22 @@
 {
   "certifications": [
     {
+      "title": "Claude Certified Developer - Foundations",
+      "issuer": "Anthropic",
+      "date": "2025",
+      "credentialId": "2cc50f6b-0c6c-4a84-9546-ea31f70bc199",
+      "credentialUrl": "https://www.credly.com/badges/2cc50f6b-0c6c-4a84-9546-ea31f70bc199/public_url",
+      "description": "Official Anthropic certification validating foundational expertise in building applications with Claude AI and the Anthropic API."
+    },
+    {
+      "title": "AWS Academy Graduate - Cloud Foundations",
+      "issuer": "Amazon Web Services",
+      "date": "2021",
+      "credentialId": "abf10f79-5abe-4dd6-b558-84f5e83290b7",
+      "credentialUrl": "https://www.credly.com/badges/abf10f79-5abe-4dd6-b558-84f5e83290b7/public_url",
+      "description": "AWS Academy graduate badge recognizing foundational knowledge of cloud computing concepts, AWS core services, and cloud architecture best practices."
+    },
+    {
       "title": "Machine Learning Specialization",
       "issuer": "Nelumbus Educare",
       "date": "2020",
@@ -15,14 +31,6 @@
       "credentialId": "",
       "credentialUrl": "/my_portfolio/images/Sumit_Dhakad_Nelumbus.pdf",
       "description": "5-course specialization on neural networks, CNNs, RNNs, and sequence models."
-    },
-    {
-      "title": "AWS Certified Machine Learning - Specialty",
-      "issuer": "Amazon Web Services",
-      "date": "2022",
-      "credentialId": "AWS-ML-SPECIALTY",
-      "credentialUrl": "https://aws.amazon.com/certification/",
-      "description": "Advanced knowledge of ML services on AWS including SageMaker, feature store, and model deployment."
     }
   ]
 }

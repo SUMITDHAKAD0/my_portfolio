@@ -58,7 +58,7 @@ const Footer = () => {
           <div className="mb-6 md:mb-0">
             <h3 className="text-2xl font-bold mb-2">{personalInfo.name || "ML Engineer"}</h3>
             <p className="text-light-gray max-w-md">
-              Transforming data into actionable intelligence through machine learning and AI solutions.
+              Building intelligent, agentic AI systems that turn complex data into real-world impact.
             </p>
           </div>
           
@@ -75,8 +75,8 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Connect</h4>
             <div className="flex space-x-4">
-              {personalInfo.socialMedia && personalInfo.socialMedia.map((social, index) => (
-                <a 
+              {personalInfo.socialMedia && personalInfo.socialMedia.filter(s => s.url).map((social, index) => (
+                <a
                   key={index}
                   href={social.url}
                   target="_blank"

@@ -35,8 +35,13 @@
       },
       {
         "name": "Medium",
-        "url": "https://medium.com/@yourusername",
+        "url": null,
         "icon": "medium"
       }
-    ]
+    ],
+    "emailJsConfig": {
+      "serviceId": "service_72ximrb",
+      "templateId": "template_ad28toq",
+      "publicKey": "MXKWxd1S9QFIVSrcM"
+    }
   }

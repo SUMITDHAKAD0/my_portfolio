@@ -50,12 +50,11 @@ const Hero = () => {
     
     // If we've deleted the role completely
     if (isDeleting && displayRole === '') {
-      setIsDeleting(false);
-      // Move to next role
-      setCurrentRoleIndex((currentRoleIndex + 1) % personalInfo.roles.length);
-      // Pause before typing the next role
-      setTimeout(() => {}, 500);
-      return;
+      const pauseTimeout = setTimeout(() => {
+        setIsDeleting(false);
+        setCurrentRoleIndex((currentRoleIndex + 1) % personalInfo.roles.length);
+      }, 500);
+      return () => clearTimeout(pauseTimeout);
     }
     
     // Set timeout for next character
@@ -120,22 +119,17 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
         {/* Left text section - independent */}
         <div className="text-white z-10">
-          {/* Greeting with animation */}
-          <div className="mb-6 overflow-hidden">
-            <h4 className="text-5xl sm:text-6xl md:text-7xl font-extrabold mb-2 animate-fade-in-up">
-              {personalInfo.greeting}
-            </h4>
-          </div>
-          
-          {/* Main heading with gradient text - natural height */}
-          <div className="mb-8 overflow-hidden">
+          {/* Greeting + I Am on one line */}
+          <div className="mb-8">
             <div className="relative pb-6">
-              <h4 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-                {personalInfo.staticHeadline}
-                <span className="bg-gradient-to-r from-[#56cca7] via-[#4fb59a] to-[#56cca7] bg-clip-text text-transparent animate-pulse">
-                  {' '}{displayRole}
-                </span>
+              <h4 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight animate-fade-in-up">
+                {personalInfo.greeting} {personalInfo.staticHeadline}
               </h4>
+              <div className="h-[5rem] sm:h-[7rem] md:h-[8rem] lg:h-[10rem] overflow-hidden">
+                <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight bg-gradient-to-r from-[#56cca7] via-[#4fb59a] to-[#56cca7] bg-clip-text text-transparent animate-pulse">
+                  {displayRole}
+                </span>
+              </div>
               <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-[#56cca7] to-transparent w-32 md:w-48"></div>
             </div>
           </div>
@@ -154,8 +148,8 @@ const Hero = () => {
           
           {/* Social Media Links with enhanced styling */}
           <div className="flex flex-wrap gap-4 mb-8 animate-fade-in-up" style={{animationDelay: '0.8s'}}>
-            {personalInfo.socialMedia && personalInfo.socialMedia.map((social, index) => (
-              <a 
+            {personalInfo.socialMedia && personalInfo.socialMedia.filter(s => s.url).map((social, index) => (
+              <a
                 key={index}
                 href={social.url}
                 target="_blank"
@@ -200,10 +194,11 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-[#56cca7]/30 to-[#0a2638]/10 z-10 mix-blend-color-dodge"></div>
               
               {/* Image */}
-              <img 
-                src={personalInfo.profileImage} 
-                alt={personalInfo.name} 
-                className="relative z-0 max-h-[60vh] md:max-h-[70vh] w-auto object-cover rounded-lg" 
+              <img
+                src={personalInfo.profileImage}
+                alt={personalInfo.name}
+                loading="lazy"
+                className="relative z-0 max-h-[60vh] md:max-h-[70vh] w-auto object-cover rounded-lg"
               />
               
               {/* Corner accents */}
@@ -215,9 +210,9 @@ const Hero = () => {
             <div className="absolute top-10 bottom-10 right-full mr-8 md:mr-12 w-px bg-gradient-to-b from-[#56cca7] to-transparent hidden lg:block"></div>
             
             {/* Floating stats or badges */}
-            {/* <div className="absolute -bottom-6 -left-6 bg-[#56cca7] text-[#0a2638] px-4 py-3 rounded-lg shadow-lg font-bold text-sm md:text-base animate-bounce" style={{animationDelay: '0.5s'}}>
-              3+ Years Experience
-            </div> */}
+            <div className="absolute -bottom-6 -left-6 bg-[#56cca7] text-[#0a2638] px-4 py-3 rounded-lg shadow-lg font-bold text-sm md:text-base animate-bounce" style={{animationDelay: '0.5s'}}>
+              4+ Years Experience
+            </div>
           </div>
         </div>
       </div>

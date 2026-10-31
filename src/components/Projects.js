@@ -62,15 +62,17 @@ const Projects = () => {
               className="bg-white/5 rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-2"
             >
               <div className="relative">
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  loading="lazy"
                   className="w-full h-60 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
                   <div className="flex space-x-3">
-                    <a 
-                      href={project.demoLink} 
+                    {project.demoLink && (
+                    <a
+                      href={project.demoLink}
                       className="flex items-center justify-center w-12 h-12 rounded-full bg-secondary text-primary hover:bg-secondary/90 transition-colors"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -81,8 +83,9 @@ const Projects = () => {
                         <line x1="10" y1="14" x2="21" y2="3"></line>
                       </svg>
                     </a>
-                    <a 
-                      href={project.codeLink} 
+                    )}
+                    <a
+                      href={project.codeLink}
                       className="flex items-center justify-center w-12 h-12 rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -100,6 +103,7 @@ const Projects = () => {
                 <p className="text-light-gray mb-6 text-sm leading-relaxed">{project.description}</p>
                 
                 {/* Key Features Section - Now Collapsible with Border */}
+                {project.keyFeatures && project.keyFeatures.length > 0 && (
                 <div className="mb-6 border border-secondary/20 rounded-lg overflow-hidden">
                   <button 
                     onClick={() => toggleFeatures(index)}
@@ -124,19 +128,23 @@ const Projects = () => {
                   
                   <div 
                     className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                      expandedFeatures[index] ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      expandedFeatures[index] ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'
                     }`}
                   >
                     <div className="p-3 border-t border-secondary/20 bg-white/5">
-                      <ul className="list-disc list-inside space-y-1 text-sm text-light-gray">
+                      <ul className="space-y-2 text-sm text-light-gray">
                         {project.keyFeatures && project.keyFeatures.map((feature, idx) => (
-                          <li key={idx}>{feature}</li>
+                          <li key={idx} className="flex gap-2">
+                            <span className="text-secondary shrink-0 mt-0.5">•</span>
+                            <span>{feature}</span>
+                          </li>
                         ))}
                       </ul>
                     </div>
                   </div>
                 </div>
-                
+                )}
+
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, idx) => (
                     <span 

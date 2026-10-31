@@ -3,6 +3,7 @@
       {
         "title": "AI and Data Science Engineer II",
         "company": "Deloitte",
+        "location": "Pune, India",
         "period": "Jan 2026 – Present",
         "description": "Designed and developed a centralized AI-powered business intelligence and partner discovery platform that helps Deloitte identify, evaluate, and qualify U.S. small businesses for large project opportunities. The platform fuses 250+ GB of government spending data, internal organizational intelligence, and real-time web sources into a continuously enriched knowledge system — cutting manual research from hours to minutes through a multi-agent AI assistant.",
         "keyFeatures": [
@@ -21,7 +22,8 @@
       {
         "title": "Machine Learning Engineer II",
         "company": "Verge Impex LLP",
-        "period": "Nov-2024 to Jan-2026",
+        "location": "Mumbai, India",
+        "period": "Nov 2024 – Jan 2026",
         "description": "Led the development of a secure, offline, on-prem AI-based health monitoring system for the medical department, integrating an intelligent agent workflow for high-accuracy insights. Spearheaded the design of a scalable FastAPI solution with automated testing and CI/CD for seamless deployment.",
         "keyFeatures": [
           "98% accuracy achieved in AI-driven health monitoring insights.",
@@ -34,7 +36,8 @@
       {
         "title": "AI Engineer",
         "company": "WESEE",
-        "period": "July-2023 to Nov-2023",
+        "location": "New Delhi, India",
+        "period": "Jul 2023 – Nov 2023",
         "description": "Designed and deployed an AI-driven system to extract and structure unstructured data from Pakistan news and defense sources. Implemented an intelligent agent for data aggregation and analysis, enabling efficient query-based retrieval and actionable insights.",
         "keyFeatures": [
           "Developed a robust pipeline for extracting and structuring unstructured data.",
@@ -47,8 +50,9 @@
       },
       {
         "title": "Machine Learning Engineer",
-        "company": "AIEnsure Pvt Ltd",
-        "period": "June-2022 to July-2024",
+        "company": "AIEnsured Pvt Ltd",
+        "location": "Noida, India",
+        "period": "Jun 2022 – Jul 2024",
         "description": "Developed end-to-end machine learning pipelines for structured data, images, and NLP, with a strong focus on model explainability, fairness, and feedback loops. Engineered synthetic data generation solutions and optimized document-based question-answering using LLMs.",
         "keyFeatures": [
           "Built ML pipelines ensuring robust model testing and performance evaluation.",
@@ -62,9 +66,14 @@
       {
         "title": "Machine Learning Intern",
         "company": "Hynix Intermedia",
-        "period": "March-2022 to May-2022",
+        "location": "Noida, India",
+        "period": "Mar 2022 – May 2022",
         "description": " Provided effective support on live projects, solving complex problems and leveraging Machine Learning and Deep Learning to develop innovative solutions. Gained hands-on experience in AI model optimization and real-time issue resolution.",
-        "keyFeatures": [],
+        "keyFeatures": [
+          "Contributed to live ML projects, debugging models and improving pipeline performance.",
+          "Gained hands-on experience with data preprocessing, feature engineering, and model evaluation.",
+          "Collaborated with senior engineers on real-time AI problem-solving."
+        ],
         "technologies": ["Scikit-learn", "Pandas", "NumPy", "Matplotlib", "PyTorch", "TensorFlow"]
       }
     ]

@@ -2,9 +2,10 @@
     "projects": [
       {
         "title": "TRAI SMS Classification & Compliance Platform",
-        "category": "nlp",
+        "category": "Gen-AI",
         "image": "/my_portfolio/images/trai.png",
         "description": "Built a full-stack multi-tenant SaaS platform for automating TRAI regulatory SMS classification using a fine-tuned HuggingFace transformer. Deployed on a GCP Compute Engine instance with PostgreSQL, Docker, and Nginx — enabling telecom businesses to classify bulk SMS data with AI and route low-confidence results through a human review workflow, reducing manual compliance effort by 80%.",
+
         "keyFeatures": [
           "AI-Powered Bulk Classification: Analysts upload CSV/XLSX files; a HuggingFace text-classification pipeline classifies every SMS row with a predicted label and confidence score across 3 regulatory categories, processing 50,000+ rows per run",
           "Human Review Workflow: Rows below a configurable confidence threshold (default 0.70) are automatically flagged and routed to analysts or viewers for manual label correction, reducing human effort by focusing review on only 5–10% of data",
@@ -18,12 +19,12 @@
           "GCP Deployment: Hosted on GCP Compute Engine with Docker Compose, PostgreSQL, and Nginx reverse proxy for production-grade reliability, scalability, and persistent volume storage"
         ],
         "technologies": ["Python", "FastAPI", "HuggingFace Transformers", "PostgreSQL", "SQLAlchemy", "Alembic", "JWT", "React", "Tailwind CSS", "Radix UI", "Recharts", "Docker", "Nginx", "GCP", "Pandas"],
-        "demoLink": "https://github.com/SUMITDHAKAD0",
+        "demoLink": null,
         "codeLink": "https://github.com/SUMITDHAKAD0"
       },
       {
         "title": "AI-Powered Health Monitoring System for Indian Navy",
-        "category": "nlp",
+        "category": "Gen-AI",
         "image": "/my_portfolio/images/health.png",
         "description": "Led the development of a smart AI-driven health tracking and advisory system for Indian Navy employees, integrating intelligent medical insights, interactive dashboards, and real-time assistance.",
         "keyFeatures": [
@@ -36,7 +37,7 @@
           "UI with React: Built an engaging and responsive fronten with seprate role based login and UI"
         ],
         "technologies": ["Python", "FastAPI", "AI Agents", "HuggingFace", "NLP", "React", "Docker", "Vector Database", "MySQL"],
-        "demoLink": "https://github.com/SUMITDHAKAD0",
+        "demoLink": null,
         "codeLink": "https://github.com/SUMITDHAKAD0"
       },
       {
@@ -63,7 +64,7 @@
           "PDF Parsing",
           "Session Management"
         ],
-        "demoLink": "https://github.com/SUMITDHAKAD0",
+        "demoLink": null,
         "codeLink": "https://github.com/SUMITDHAKAD0"
       }, 
       {
@@ -93,7 +94,7 @@
           "RAG",
           "Session Management"
         ],
-        "demoLink": "https://github.com/SUMITDHAKAD0",
+        "demoLink": null,
         "codeLink": "https://github.com/SUMITDHAKAD0"
       },      
       {
@@ -109,7 +110,7 @@
           "Deployment: Backend powered by FastAPI, frontend developed with JavaScript, HTML, and CSS"
         ],
         "technologies": ["Python", "Langchain", "Crawl4AI", "FastAPI", "Milvus", "MySQL", "RAG", "JavaScript", "HTML", "CSS"],
-        "demoLink": "#",
+        "demoLink": null,
         "codeLink": "https://github.com/SUMITDHAKAD0"
       },
       {
@@ -126,29 +127,14 @@
           "Designed for efficient real-time inference on various deployment platforms"
         ],
         "technologies": ["Python", "PyTorch", "OpenCV", "Ultralytics", "YOLOv8", "FastAPI"],
-        "demoLink": "#",
+        "demoLink": null,
         "codeLink": "https://github.com/SUMITDHAKAD0/Road-Scenario-Object-Detection"
-      },
-      {
-        "title": "AI-Powered Analytics Dashboard",
-        "category": "machine-learning",
-        "image": "/my_portfolio/images/Rag.png",
-        "description": "A sophisticated analytics platform that leverages machine learning for data visualization and predictive analytics. Features include customizable dashboards, automated report generation, and trend analysis.",
-        "keyFeatures": [
-          "Integrated machine learning models for prediction",
-          "Built interactive data visualizations",
-          "Implemented real-time data processing",
-          "Optimized performance for large datasets"
-        ],
-        "technologies": ["React", "Python", "TensorFlow", "scikit-learn", "PostgreSQL"],
-        "demoLink": "#",
-        "codeLink": "https://github.com/SUMITDHAKAD0"
       }
     ],
     "filters": [
       { "name": "All", "value": "all" },
       { "name": "Machine Learning", "value": "machine-learning" },
-      { "name": "Gen-AI", "value": "blockchain" },
+      { "name": "Gen-AI", "value": "Gen-AI" },
       { "name": "NLP", "value": "nlp" },
       { "name": "Computer Vision", "value": "computer-vision" },
       { "name": "Web Development", "value": "web-development" },
