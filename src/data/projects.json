@@ -23,6 +23,27 @@
         "codeLink": "https://github.com/SUMITDHAKAD0"
       },
       {
+        "title": "DPDP Compliance & Knowledge Graph Engine",
+        "category": "Gen-AI",
+        "image": "/my_portfolio/images/dpdp.png",
+        "description": "Designed and developed a full-stack, enterprise-grade RegTech platform to automate Digital Personal Data Protection (DPDP) Act compliance using a deterministic rule-based graph engine, canonical fact mapping layer, and guardrailed LLM explanation engine. Integrated PostgreSQL as the source of truth and Neo4j for regulatory knowledge graph relationships, enabling organizations to evaluate regulatory applicability, assess control coverage, identify compliance gaps, and generate traceable, audit-ready remediation reports without relying on AI for compliance decisions.",
+
+        "keyFeatures": [
+          "Deterministic Graph Matching Engine: Implemented Neo4j-based regulatory matching using complex AND/OR/NOT logic across legal sections, rules, conditions, and obligations to evaluate DPDP applicability without LLM-based decision-making.",
+          "Canonical Fact Standardization: Developed a normalization layer to convert questionnaire responses and organizational metadata into standardized compliance facts such as PERSONAL_DATA_PROCESSING and CROSS_BORDER_TRANSFER, enabling consistent graph matching and traceable compliance evaluation.",
+          "Guardrailed LLM Explanation Engine: Integrated LangChain and OpenAI for natural-language parsing, ambiguous response resolution, and report generation while keeping final compliance decisions entirely within deterministic rule-based logic.",
+          "Automated Compliance Gap Analysis: Built a pipeline to map regulatory obligations against organizational security controls and supporting evidence, categorizing compliance status as Compliant, Partially Compliant, or Needs Review.",
+          "Versioned Regulatory Knowledge Graph: Designed Neo4j graph relationships between DPDP Sections, Rules, Conditions, Obligations, and Recommendations with schema versioning for historical traceability and auditability.",
+          "End-to-End REST API Architecture: Developed modular FastAPI endpoints for organization management, questionnaire handling, canonical fact generation, compliance evaluation, gap analysis, and remediation tracking.",
+          "Traceable Audit & Evidence Mapping: Implemented evidence-chain tracking to link every compliance assessment and matched condition back to the corresponding regulatory provisions.",
+          "Structured Compliance Questionnaire: Built a multi-select and free-text questionnaire covering 20 core regulatory metrics, including consent management, cross-border data transfers, children's data protection, and breach response procedures.",
+          "Phased MVP Architecture: Designed an extensible architecture supporting an initial implementation of 10–20 high-value canonical facts, core regulatory matching, automated gap analysis, and evidence-based reporting, with scope for multi-industry expansion."
+        ],
+        "technologies": ["Python", "FastAPI", "Neo4j", "PostgreSQL", "SQLAlchemy", "LangChain", "OpenAI API", "REST APIs", "Docker", "Nginx", "Pandas", "JSON Schema"],
+        "demoLink": null,
+        "codeLink": "https://github.com/SUMITDHAKAD0"
+      },
+      {
         "title": "AI-Powered Health Monitoring System for Indian Navy",
         "category": "Gen-AI",
         "image": "/my_portfolio/images/health.png",
